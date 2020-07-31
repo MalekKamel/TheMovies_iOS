@@ -1,0 +1,25 @@
+"Search" = "Search";
+"Discover" = "Discover";
+"cancel" = "Cancel";
+
+"Invalid" = "Invalid";
+
+"Invalid e-mail Address" = "Invalid e-mail address";
+
+"Invalid e-mail Address" = "Invalid e-mail Address";
+
+"Last name cannot be empty" = "Last name cannot be empty";
+
+"Last name cannot be less than 3 letters" = "Last name cannot be less than 3 letters";
+
+"Last name is invalid" = "Last name is invalid";
+
+"must_be" = "Must be";
+
+"Required" = "Required";
+
+"not_matching" = "Not matching";
+
+"can_not_be_more_than" = "Can't ne more than";
+
+"can_not_be_less_than" = "Can't be less than";

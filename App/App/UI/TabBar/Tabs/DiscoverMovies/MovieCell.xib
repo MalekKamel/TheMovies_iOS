@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" id="gCl-dS-FET" customClass="MovieCell" customModule="The_Movies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="668" height="296"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gCl-dS-FET" id="Lul-hF-hhz">
+                <rect key="frame" x="0.0" y="0.0" width="668" height="296"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8ft-fu-Y6i">
+                        <rect key="frame" x="0.0" y="0.0" width="668" height="296"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D59-t2-MTB">
+                                <rect key="frame" x="0.0" y="0.0" width="668" height="205"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="205" id="ppP-ul-xnm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsm-TL-4Vo">
+                                <rect key="frame" x="0.0" y="213" width="668" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="Cloudy"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEX-Kc-KrK">
+                                <rect key="frame" x="0.0" y="247" width="668" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aV-Tl-Xu4">
+                                <rect key="frame" x="0.0" y="275.5" width="668" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="8ft-fu-Y6i" secondAttribute="bottom" id="0Vr-oB-06J"/>
+                    <constraint firstItem="8ft-fu-Y6i" firstAttribute="leading" secondItem="Lul-hF-hhz" secondAttribute="leading" id="5J1-4V-1rl"/>
+                    <constraint firstAttribute="trailing" secondItem="8ft-fu-Y6i" secondAttribute="trailing" id="irw-2m-4td"/>
+                    <constraint firstItem="8ft-fu-Y6i" firstAttribute="top" secondItem="Lul-hF-hhz" secondAttribute="top" id="yBQ-mo-bHp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ivThumbnail" destination="D59-t2-MTB" id="FLe-QC-FiX"/>
+                <outlet property="lblName" destination="Rsm-TL-4Vo" id="Gy0-t7-wUD"/>
+                <outlet property="lblOverview" destination="9aV-Tl-Xu4" id="IXZ-TM-cjh"/>
+                <outlet property="lblReleaseDate" destination="GEX-Kc-KrK" id="H8P-63-mbQ"/>
+            </connections>
+            <point key="canvasLocation" x="287" y="135"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Cloudy">
+            <color red="0.0" green="0.73333333333333328" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

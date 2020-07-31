@@ -1,0 +1,353 @@
+commit b8f7eb95f92a5edb9f904e12e196dbca9291f35a
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Wed Feb 26 17:28:13 2020 +0400
+
+    implement selecting delivery address
+
+commit 8c4d25318ecfb4d666ea18846938bb5a98de14a1
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Wed Feb 26 16:23:09 2020 +0400
+
+    improve code
+
+commit f190b4bed0ee64f4c68869c54c9d592fe58beba1
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Wed Feb 26 16:19:40 2020 +0400
+
+    add select courrier option to delivery address
+
+commit 379921da534539ae24ddb9a88408f41c6a9c405c
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Wed Feb 26 10:08:29 2020 +0400
+
+    imorove code
+
+commit a9cf2b45fc7cd950c5cd94ab125e9de7f1252f2f
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Wed Feb 26 10:03:53 2020 +0400
+
+    add blank controller for assign family member
+
+commit 680f878cd042431b47c6517dd892347a0f64faf1
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Tue Feb 25 13:11:10 2020 +0400
+
+    add delivery address APIs
+
+commit 8158b3bcb15d8634b47859bee434f965f97e35e2
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Mon Feb 24 21:12:42 2020 +0400
+
+    add search bar in LocationVC
+
+commit 286e85f57d396d7437abfbfd18c53cdc79f79a11
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Mon Feb 24 14:07:59 2020 +0400
+
+    add location permission description
+
+commit 634de1e028066f320160f46d69d0e638bc481771
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Mon Feb 24 13:54:43 2020 +0400
+
+    show Google Map view and search in LocationVC
+
+commit c406e950f73c196e8cd9df7d0df53f67244a628f
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Mon Feb 24 02:42:44 2020 +0400
+
+    toggle actions on gift according to state
+
+commit 1960090f18056da88235336583795c273cab9625
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Mon Feb 24 02:29:13 2020 +0400
+
+    implement instant gift new UI
+
+commit 9aad76426cc811ed37aa536d7a9005312cf74b58
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Sun Feb 23 15:31:10 2020 +0400
+
+    implement upcoming promotions
+
+commit a63930d010457952a3ba0a8341ff07b9518a66db
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Sun Feb 23 12:46:31 2020 +0400
+
+    show current status of scratch card
+
+commit 2b6f78a34762e24cbc691362358fa7c167480da8
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Sun Feb 23 11:47:10 2020 +0400
+
+    improve winner coupon UI
+
+commit 61e7845909cde8f508973a11f82d306c61756dfb
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Sun Feb 23 02:09:20 2020 +0400
+
+    show winner coupons data and home fields
+
+commit e285d97e5604de616de50347cbdbabf77408e6e6
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Sun Feb 23 01:58:34 2020 +0400
+
+    show reward when scratch insant gift
+
+commit 1a40e16b964809f46e0458f01fc4964695dc516f
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Sun Feb 23 00:51:01 2020 +0400
+
+    remove tabs from coupons controler
+
+commit 5348d6c8c6c909c0ba43369bebe1857f00e739e9
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Wed Feb 19 00:32:49 2020 +0400
+
+    implement scartch view
+
+commit 6387b9032a5d5eb98724e4a7d7367c4657391f65
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Tue Feb 18 16:48:49 2020 +0400
+
+    add countdown to winner coupon & add CouponStatus enum
+
+commit 649c75382c96b24adcbad19df18142ffbb084d01
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Mon Feb 17 16:53:58 2020 +0400
+
+    Add family memebers screens
+
+commit f7f616bc5f4fe8c94f9720695b55aac0939214d4
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Mon Feb 17 13:55:05 2020 +0400
+
+    creat CouponItem for presentation
+
+commit bf9c75dbf0773972799aa5cae321581256c9aa8f
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Mon Feb 17 00:00:13 2020 +0400
+
+    change app name
+
+commit adf81c13af872ac2865aa1e2b9d23c6c58bbedbf
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Sun Feb 16 23:54:34 2020 +0400
+
+    show readable date in NormalCouponCell
+
+commit 883c0d7dcb01d8b58dc36d71f6e1b85904b4bd8b
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Sun Feb 16 23:28:22 2020 +0400
+
+    implement countdown logic
+
+commit 80665e2ebd0be4ed30cfd66f3ed4e55c2c0ce539
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Sun Feb 16 19:31:55 2020 +0400
+
+    show CountDownVC on click NormalCouponCell button
+
+commit 4e78b2d6f3fb1b9fe1d105c94d76ebcb11c85b23
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Sun Feb 16 18:05:28 2020 +0400
+
+    remove redundant classes
+
+commit 944c04348b1c625e0b5cb4d85936fed58d22a460
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Sun Feb 16 18:01:12 2020 +0400
+
+    implement CountDownTimer
+
+commit 55e8eea1a27b436064d830ef15e66c8fb443a259
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Sat Feb 15 14:23:26 2020 +0400
+
+    implement CampaignsFrag logic
+
+commit cdb53986720be424e20238880f28235fa912f8ce
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Fri Feb 14 21:54:07 2020 +0400
+
+    add CountDownVC
+
+commit e2de81d00ac36ed5548cdfe7dc7d1f1e80d6f421
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Fri Feb 14 19:06:05 2020 +0400
+
+    implement ScrachCard in coupons
+
+commit 04ad051ebd8c91d5af6b6ef2a8dbbafe74aa2f21
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Thu Feb 13 16:00:25 2020 +0400
+
+    improve code of CampaignsVC & implement search in CouponsVC
+
+commit 88486c6f297840d2c07a53e8061c7f3e0d6e0434
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Thu Feb 13 15:23:58 2020 +0400
+
+    improve CouponsVC UI
+
+commit f0dd5080243b3e82769cc4e20b2397dcb67f01d7
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Thu Feb 13 10:59:56 2020 +0400
+
+    implement CampaignsVC logic
+
+commit b9ce2bcf6224ffd341cf521af1562a9d64ab9d67
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Wed Feb 12 20:55:59 2020 +0400
+
+    improve code
+
+commit d45067de907b7789c810c6bf2cef7fc33f448fc7
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Wed Feb 12 20:53:52 2020 +0400
+
+    impelement forgot pssword logic
+
+commit 7eca0d4f21ae660c932a246a4978974e1bb66359
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Mon Feb 10 17:36:02 2020 +0400
+
+    support deployment target 12 and handle SceneDelegate version check
+
+commit 8ee1d8ca577d11b1303c832e8ce186fa54d33b8e
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Mon Feb 10 17:08:09 2020 +0400
+
+    show list of campaigns
+
+commit ce878e2825690f4272bc338c985340c807b7ec6b
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Mon Feb 10 13:20:24 2020 +0400
+
+    add CampaignsVC
+
+commit 7cea01866f8d5cb305a9809b03bf82dd4c2de161
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Mon Feb 10 12:28:20 2020 +0400
+
+    add tabBarItem for each controller in TabBar programmatically
+
+commit d19c252c8ac63d99b8cbc0a5b5ba7ab856dacd33
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Sun Feb 9 23:39:40 2020 +0400
+
+    implement logic of PromotionDetailVC
+
+commit bbaac487929fe4abf0ce0e5b305f50ce2d931293
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Sun Feb 9 16:26:24 2020 +0400
+
+    add PromotionDetailVC
+
+commit 58936642edb3d128ea3589ce4fe31cc09c311f88
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Sun Feb 9 11:23:39 2020 +0400
+
+    add TabBarVC to enable injection using builders & load data of HomeVC
+
+commit ef1b72c4ece1de0f2b7436954d60a2e9a627b126
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Thu Feb 6 20:33:12 2020 +0400
+
+    add logout option to HomeVC
+
+commit 8a4c1b01b3834fdc8bf3925a4e19a7f20b2db78e
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Thu Feb 6 17:55:49 2020 +0400
+
+    implement CollectionViews in HomeVC
+
+commit cee41cef0b95a9a764cad392b00e8511dbfe41eb
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Thu Feb 6 13:19:17 2020 +0400
+
+    connect TabBar storyboards
+
+commit 10ca3050664541d75763e880147718dd6f8e8cbe
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Thu Feb 6 11:30:30 2020 +0400
+
+    fix register & login issues
+
+commit 9b177a7cda07e9bb0aa37c13743d9f42429d4599
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Thu Feb 6 03:34:15 2020 +0400
+
+    implement login, registration, and OTP
+
+commit 5e817d9e2164d0c8a6dc98df225970fe7d66b354
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Wed Feb 5 14:46:24 2020 +0400
+
+    encapsulate CountryPicker code in helper class
+
+commit 24ad70c4919ae6107c0a0af2e600e360a895efd3
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Wed Feb 5 12:55:43 2020 +0400
+
+    improve code
+
+commit 2c9221468ebcc266beaf1fb4c9fd18a944daeca2
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Wed Feb 5 12:55:08 2020 +0400
+
+    show RegiserVC using builder
+
+commit 36faed9098f0e212788c1a45ea8bd19852bc3466
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Wed Feb 5 12:36:20 2020 +0400
+
+    improve code
+
+commit d4afe4dd1df01e1f3864fbd39bb39f8a6b784d37
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Wed Feb 5 12:35:21 2020 +0400
+
+    fix SwiftMessages crash by setting Swift version to 5 in pod
+
+commit 4ae860a00157fc23150d944ba7f144f711f9b109
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Tue Feb 4 17:04:34 2020 +0400
+
+    connect password storyboards
+
+commit d959bdbb36d1e67df1a4dfde73840ad8a12c1d18
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Tue Feb 4 15:52:59 2020 +0400
+
+    connect login & register storyboards
+
+commit 6dea9192da5b3d243e8be1b17683266f01fdf195
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Tue Feb 4 12:36:47 2020 +0400
+
+    navigate to initial ViewController & generate segues using SwiftGen
+
+commit c579c038fc38ef4fc84fb11d7670866a65124558
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Tue Feb 4 11:31:27 2020 +0400
+
+    add ViewController components
+
+commit c6d28cda182b8235b4881d08b48d099421bf9b41
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Tue Feb 4 02:36:11 2020 +0400
+
+    add storyboards and RegisterVC
+
+commit d3bdaeea6a6840091da1c0b31bd548a31010dbe7
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Tue Feb 4 00:50:42 2020 +0400
+
+    remove redundant code
+
+commit 6c9cf320774ff937e74c05e64b6f8e3411af402d
+Author: ShabanKamell <sh3ban.kamel@gmail.com>
+Date:   Mon Feb 3 22:47:49 2020 +0400
+
+    initial commit

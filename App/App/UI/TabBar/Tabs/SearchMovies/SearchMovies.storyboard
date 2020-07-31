@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XSW-nc-aQO">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search MoviesVC-->
+        <scene sceneID="Fcx-b7-cEP">
+            <objects>
+                <viewController storyboardIdentifier="Campaigns" id="XSW-nc-aQO" customClass="SearchMoviesVC" customModule="The_Movies" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sfE-zz-aqn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Roe-nl-oOh">
+                                <rect key="frame" x="20" y="52" width="374" height="40"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" barStyle="black" searchBarStyle="minimal" text="" placeholder="Search a Movie" translatesAutoresizingMaskIntoConstraints="NO" id="O4B-jo-bWi">
+                                        <rect key="frame" x="0.0" y="0.0" width="269" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.078431372550000003" green="0.63921568630000003" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="XSW-nc-aQO" id="bxo-4G-GSX"/>
+                                        </connections>
+                                    </searchBar>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xok-pU-aZQ">
+                                        <rect key="frame" x="274" y="0.0" width="100" height="40"/>
+                                        <color key="backgroundColor" name="Cloudy"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="E32-2L-CA4"/>
+                                            <constraint firstAttribute="height" constant="40" id="dun-wR-ZBw"/>
+                                        </constraints>
+                                        <state key="normal" title="Search">
+                                            <color key="titleColor" red="0.97647720579999997" green="0.9764588475" blue="0.97647136450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="search:" destination="XSW-nc-aQO" eventType="touchUpInside" id="YyV-om-0Ro"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3SJ-4l-43k" userLabel="TableView">
+                                <rect key="frame" x="20" y="100" width="374" height="713"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Roe-nl-oOh" firstAttribute="top" secondItem="3Qs-WD-alg" secondAttribute="top" constant="8" id="8oB-TE-Npp"/>
+                            <constraint firstItem="Roe-nl-oOh" firstAttribute="leading" secondItem="3Qs-WD-alg" secondAttribute="leading" constant="20" id="B6W-qC-YJX"/>
+                            <constraint firstItem="3SJ-4l-43k" firstAttribute="top" secondItem="Roe-nl-oOh" secondAttribute="bottom" constant="8" id="OOF-5N-lx6"/>
+                            <constraint firstItem="3Qs-WD-alg" firstAttribute="trailing" secondItem="Roe-nl-oOh" secondAttribute="trailing" constant="20" id="TAD-4Y-G3b"/>
+                            <constraint firstItem="3SJ-4l-43k" firstAttribute="leading" secondItem="3Qs-WD-alg" secondAttribute="leading" constant="20" id="W3o-8h-SEA"/>
+                            <constraint firstItem="3Qs-WD-alg" firstAttribute="trailing" secondItem="3SJ-4l-43k" secondAttribute="trailing" constant="20" id="exC-iH-WzB"/>
+                            <constraint firstItem="3SJ-4l-43k" firstAttribute="bottom" secondItem="3Qs-WD-alg" secondAttribute="bottom" id="uBD-Je-ngJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Qs-WD-alg"/>
+                    </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="searchBar" destination="O4B-jo-bWi" id="YIb-5g-XD9"/>
+                        <outlet property="tableView" destination="3SJ-4l-43k" id="UjV-4f-5gA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JUg-Z6-AdX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1059" y="-236"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.078431372550000003" green="0.63921568630000003" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+    <resources>
+        <namedColor name="Cloudy">
+            <color red="0.0" green="0.73333333333333328" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

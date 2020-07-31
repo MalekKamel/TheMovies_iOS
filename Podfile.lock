@@ -1,0 +1,146 @@
+PODS:
+  - Alamofire (5.2.1)
+  - BartyCrouch (3.13.0)
+  - BulletinBoard (4.1.2)
+  - CountryPickerSwift (1.8.2)
+  - Crashlytics (3.14.0):
+    - Fabric (~> 1.10.2)
+  - Fabric (1.10.2)
+  - FLEX (2.4.0)
+  - GoogleMaps (3.9.0):
+    - GoogleMaps/Maps (= 3.9.0)
+  - GoogleMaps/Base (3.9.0)
+  - GoogleMaps/Maps (3.9.0):
+    - GoogleMaps/Base
+  - GooglePlaces (3.9.0):
+    - GoogleMaps/Base (= 3.9.0)
+  - IQKeyboardManager (6.5.5)
+  - Layout (0.7.0):
+    - Layout/Core (= 0.7.0)
+  - Layout/Core (0.7.0)
+  - MaterialComponents/Availability (110.3.0)
+  - MaterialComponents/BottomSheet (110.3.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/private/KeyboardWatcher
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/ShapeLibrary
+    - MaterialComponents/Shapes
+  - MaterialComponents/Elevation (110.3.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/private/Application (110.3.0)
+  - MaterialComponents/private/Color (110.3.0):
+    - MaterialComponents/Availability
+  - MaterialComponents/private/KeyboardWatcher (110.3.0):
+    - MaterialComponents/private/Application
+  - MaterialComponents/private/Math (110.3.0)
+  - MaterialComponents/ShadowElevations (110.3.0)
+  - MaterialComponents/ShadowLayer (110.3.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/ShapeLibrary (110.3.0):
+    - MaterialComponents/private/Math
+    - MaterialComponents/Shapes
+  - MaterialComponents/Shapes (110.3.0):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - ModelsMapper (0.1.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
+    - Moya/Core
+    - RxSwift (~> 5.0)
+  - RxRequester/Core (0.4.0):
+    - RxSwift (~> 5.0)
+  - RxRequester/Moya (0.4.0):
+    - Moya/RxSwift (~> 14.0.0-beta.5)
+    - RxRequester/Core
+  - RxSwift (5.1.1)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - SnapKit (4.2.0)
+  - SwiftGen (6.1.0)
+  - SwiftLint (0.39.2)
+  - SwiftMessages (8.0.0):
+    - SwiftMessages/App (= 8.0.0)
+  - SwiftMessages/App (8.0.0)
+  - WMSegmentControl (0.1.16)
+
+DEPENDENCIES:
+  - BartyCrouch (= 3.13.0)
+  - BulletinBoard
+  - CountryPickerSwift
+  - Crashlytics (= 3.14.0)
+  - FLEX (= 2.4)
+  - GoogleMaps
+  - GooglePlaces
+  - IQKeyboardManager
+  - Layout (~> 0.6)
+  - MaterialComponents/BottomSheet
+  - ModelsMapper
+  - Moya/RxSwift (~> 14.0.0)
+  - RxRequester/Moya (~> 0.4.0)
+  - RxSwift (~> 5.0)
+  - SDWebImage (= 4.4.2)
+  - SnapKit (~> 4.0)
+  - SwiftGen (= 6.1.0)
+  - SwiftLint
+  - SwiftMessages
+  - WMSegmentControl
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - BartyCrouch
+    - BulletinBoard
+    - CountryPickerSwift
+    - Crashlytics
+    - Fabric
+    - FLEX
+    - GoogleMaps
+    - GooglePlaces
+    - IQKeyboardManager
+    - Layout
+    - MaterialComponents
+    - ModelsMapper
+    - Moya
+    - RxRequester
+    - RxSwift
+    - SDWebImage
+    - SnapKit
+    - SwiftGen
+    - SwiftLint
+    - SwiftMessages
+    - WMSegmentControl
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  BartyCrouch: 69e5e6ec67e77951dc1c22aa48abbf05d175b81c
+  BulletinBoard: 1c0cb191b6c6245d08f51bd2445f1e36414ec0ed
+  CountryPickerSwift: b2cd8b391a0222bd9a97d09ea30426303adac810
+  Crashlytics: 540b7e5f5da5a042647227a5e3ac51d85eed06df
+  Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
+  FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
+  GoogleMaps: 4b5346bddfe6911bb89155d43c903020170523ac
+  GooglePlaces: 1634d019549b969d40fe0ccb0b9513055adebe01
+  IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
+  Layout: 06efb0889c3065340eefceefb938b0add675a12b
+  MaterialComponents: 424da6db40748236c6f071a9e9fbe00aa62033ff
+  ModelsMapper: 7c7f748889e5583c9c56002d67abb217e01d08e4
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  RxRequester: fbe7404768d7bb40481ad77b14d04c30961af592
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
+  SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
+  SwiftMessages: 29e7975b1173fd4e8357600c6518b5a59bc607d6
+  WMSegmentControl: 828fc1c3cdc9be84d4786aa15e61bd03342294ea
+
+PODFILE CHECKSUM: 00f3361ae6baf06056e7c0c5e1bb9b43175242fc
+
+COCOAPODS: 1.9.3

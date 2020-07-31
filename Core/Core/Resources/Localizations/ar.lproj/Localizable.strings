@@ -1,0 +1,25 @@
+"Search" = "ابحث";
+"Discover" = "استكشف";
+"cancel" = "إلغاء";
+
+"Invalid" = "غير صحيح";
+
+"Invalid e-mail Address" = "بريد إكتروني غير صحيح";
+
+"Invalid e-mail Address" = "عنوان البريد الإلكتروني غير صحيح.";
+
+"Last name cannot be empty" = "لا يمكن أن يكون الاسم الأخير فارغًا";
+
+"Last name cannot be less than 3 letters" = "لا يمكن أن يكون الاسم الأخير أقل من 3 أحرف";
+
+"Last name is invalid" = "الاسم الأخير غير صحيح";
+
+"must_be" = "يجب أن يكون ";
+
+"Required" = "مطلوب ";
+
+"not_matching" = "غير مطابق";
+
+"can_not_be_more_than" = "يجب ألا يزيد عن";
+
+"can_not_be_less_than" = "يجب ألا يقل عن";
