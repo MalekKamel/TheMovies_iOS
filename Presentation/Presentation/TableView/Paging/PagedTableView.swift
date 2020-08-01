@@ -104,11 +104,7 @@ extension PagedTableView {
 extension PagedTableView: UITableViewDataSource, UITableViewDelegate {
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let number = pagedDataSource?.tableView(tableView, numberOfRowsInSection: section)
-        if let number = number {
-            return number
-        }
-        return 0
+        pagedDataSource?.tableView(tableView, numberOfRowsInSection: section) ?? 0
     }
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
