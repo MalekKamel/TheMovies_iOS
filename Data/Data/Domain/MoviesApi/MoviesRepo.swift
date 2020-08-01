@@ -7,22 +7,42 @@ import Foundation
 import RxSwift
 
 public class MoviesRepo {
-    let src: MoviesRemoteDataSrc
+    let remoteSrc: MoviesRemoteDataSrc
+    let localSrc: MoviesLocalDataSrc
 
     static func create() -> MoviesRepo {
-        MoviesRepo(src: MoviesRemoteDataSrc(api: authApi))
+        MoviesRepo(
+                remoteSrc: MoviesRemoteDataSrc(api: authApi),
+                localSrc: MoviesLocalDataSrc(db: MovieDao())
+        )
     }
 
-    init(src: MoviesRemoteDataSrc) {
-        self.src = src
+    init(remoteSrc: MoviesRemoteDataSrc, localSrc: MoviesLocalDataSrc) {
+        self.remoteSrc = remoteSrc
+        self.localSrc = localSrc
     }
 
-    public func discoverMovies(request: MoviesRequest) -> Single<MoviesResponse> {
-        src.discoverMovies(request: request)
+    public func discoverMovies(request: MoviesRequest) -> Single<[Movie]> {
+        remoteSrc.discoverMovies(request: request)
+                .map { response in
+                    response.results
+                }
     }
 
-    public func searchMovies(request: MoviesRequest) -> Single<MoviesResponse> {
-        src.searchMovies(request: request)
+    public func searchMovies(request: MoviesRequest, type: LoadType = .remote) -> Single<[Movie]> {
+        switch type {
+        case .local:
+            return localSrc.all()
+        case .remote:
+            return remoteSrc.searchMovies(request: request)
+                    .map { response in
+                        response.results
+                    }
+        }
+    }
+
+    public func save(movies: [Movie]) -> Completable {
+        localSrc.save(movies: movies)
     }
 
 }

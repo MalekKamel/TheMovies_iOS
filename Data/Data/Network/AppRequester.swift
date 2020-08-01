@@ -20,5 +20,10 @@ public class AppRequester {
         requester.request(options: options, singleRequest: singleRequest)
     }
 
+    public func request(
+            options: RequestOptions = RequestOptions.defaultOptions(),
+            completableRequest: @escaping CompletableRequest) -> Completable {
+        requester.request(options: options, completableRequest: completableRequest)
+    }
 
 }

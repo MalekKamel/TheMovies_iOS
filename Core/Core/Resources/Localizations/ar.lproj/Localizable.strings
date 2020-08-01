@@ -23,3 +23,6 @@
 "can_not_be_more_than" = "يجب ألا يزيد عن";
 
 "can_not_be_less_than" = "يجب ألا يقل عن";
+
+"oops_something_went_wrong" = "للأسف ، حدثت مشكلة غير متوقعة ، الرجاء المحاولة لاحقا.";
+

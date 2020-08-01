@@ -11,6 +11,7 @@ import Presentation
 import WMSegmentControl
 import Data
 import RxSwift
+import RxRequester
 
 final class DiscoverMoviesVC: UIViewController, ViewControllerProtocol {
     var vm: DiscoverMoviesVM!
@@ -41,16 +42,24 @@ final class DiscoverMoviesVC: UIViewController, ViewControllerProtocol {
             movies.removeAll()
             tableView.reloadData()
         }
-        let request = MoviesRequest(nextPage: page)
-        vm.discoverMovies(request: request, showLoading: page == 1)
+
+        let options = RequestOptions.Builder()
+                .showLoading(false)
+                .doOnError { error in
+                    self.tableView.hidLoading()
+                }
+                .build()
+
+        vm.discoverMovies(options: options, request: MoviesRequest(nextPage: page))
                 .subscribe(onSuccess: { [weak self] response in
-                    guard let self = self else {
-                        return
-                    }
-                    self.movies += response.results
-                    self.pager.notifyItemsLoaded(count: response.results.count)
+                    self?.showMovies(movies: response)
                 })
                 .disposed(by: disposeBag)
+    }
+
+    private func showMovies(movies: [Movie]) {
+        self.movies += movies
+        self.pager.notifyItemsLoaded(count: movies.count)
     }
 }
 

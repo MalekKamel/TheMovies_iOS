@@ -23,3 +23,5 @@
 "can_not_be_more_than" = "Can't ne more than";
 
 "can_not_be_less_than" = "Can't be less than";
+
+"oops_something_went_wrong" = "OOPS! something went wrong.";

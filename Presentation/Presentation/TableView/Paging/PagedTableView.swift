@@ -11,7 +11,7 @@ public class PagedTableView: UITableView {
 
     private var page: Int = 1
     private var isLoading = false
-    private var started = false
+    private var started = true
     private var hasMoreItems = true
     public weak var pager: Pager! {
         didSet {
@@ -105,10 +105,10 @@ extension PagedTableView: UITableViewDataSource, UITableViewDelegate {
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let number = pagedDataSource?.tableView(tableView, numberOfRowsInSection: section)
-        if number == nil {
-            return 0
+        if let number = number {
+            return number
         }
-        return hasMoreItems ? number! + 1 : number!
+        return 0
     }
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

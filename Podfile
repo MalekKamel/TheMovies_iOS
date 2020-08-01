@@ -49,6 +49,7 @@ end
 #data module
 def data_pods
     core_pods
+    pod 'RealmSwift'
 end
 
 target 'Data' do

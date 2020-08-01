@@ -33,6 +33,8 @@ public enum L10n {
   public static let mustBe = L10n.tr("Localizable", "must_be")
   /// Not matching
   public static let notMatching = L10n.tr("Localizable", "not_matching")
+  /// OOPS! something went wrong.
+  public static let oopsSomethingWentWrong = L10n.tr("Localizable", "oops_something_went_wrong")
   /// Required
   public static let `required` = L10n.tr("Localizable", "Required")
   /// Search

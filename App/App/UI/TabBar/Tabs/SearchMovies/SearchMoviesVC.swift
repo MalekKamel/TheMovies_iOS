@@ -11,6 +11,7 @@ import Presentation
 import WMSegmentControl
 import Data
 import RxSwift
+import RxRequester
 
 final class SearchMoviesVC: UIViewController, ViewControllerProtocol {
     var vm: SearchMoviesVM!
@@ -39,28 +40,47 @@ final class SearchMoviesVC: UIViewController, ViewControllerProtocol {
                 .build()
     }()
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        searchMovies(type: .local)
+    }
+
     @IBAction func search(_ sender: UIButton) {
+        startSearch()
+    }
+
+    private func startSearch() {
         movies.removeAll()
+        tableView.reloadData()
         pager.start()
     }
 
-    private func searchMovies(page: Int = 1) {
+    private func searchMovies(page: Int = 1, type: LoadType = .remote) {
         searchBar.endEditing(true)
-        guard vm.isValidSearch(query: searchBar.text) else {
+
+        guard vm.isValidSearch(query: searchBar.text, type: type) else {
             return
         }
+
+        let options = RequestOptions.Builder()
+                .showLoading(false)
+                .doOnError { error in
+                    self.tableView.hidLoading()
+                }
+                .build()
+
         let request = MoviesRequest(search: searchBar.text ?? "", nextPage: page)
-        vm.searchMovies(request: request, showLoading: page == 1)
+        vm.searchMovies(options: options, request: request, type: type)
                 .subscribe(onSuccess: { [weak self] response in
-                    guard let self = self else {
-                        return
-                    }
-                    self.movies += response.results
-                    self.pager.notifyItemsLoaded(count: response.results.count)
+                    self?.showMovies(movies: response)
                 })
                 .disposed(by: disposeBag)
     }
 
+    private func showMovies(movies: [Movie]) {
+        self.movies += movies
+        self.pager.notifyItemsLoaded(count: movies.count)
+    }
 }
 
 extension SearchMoviesVC: UITableViewDataSource, UITableViewDelegate {
@@ -78,7 +98,6 @@ extension SearchMoviesVC: UITableViewDataSource, UITableViewDelegate {
 //MARK: SearchBar Delegate
 extension SearchMoviesVC: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        movies.removeAll()
-        pager.start()
+        startSearch()
     }
 }
