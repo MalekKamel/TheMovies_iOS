@@ -6,7 +6,7 @@
 import Foundation
 import Moya
 
-let authApi: MoyaProvider<MoviesApi> = createProvider()
+let moviesApi: MoyaProvider<MoviesApi> = createProvider()
 
 enum MoviesApi {
     case discoverMovies(MoviesRequest)

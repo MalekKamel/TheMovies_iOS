@@ -12,7 +12,7 @@ public class MoviesRepo {
 
     static func create() -> MoviesRepo {
         MoviesRepo(
-                remoteSrc: MoviesRemoteDataSrc(api: authApi),
+                remoteSrc: MoviesRemoteDataSrc(api: moviesApi),
                 localSrc: MoviesLocalDataSrc(db: MovieDao())
         )
     }
