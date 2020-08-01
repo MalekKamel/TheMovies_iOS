@@ -16,6 +16,7 @@
 		046B800E236F3A1500AE23A4 /* Data.h in Headers */ = {isa = PBXBuildFile; fileRef = 046B8000236F3A1500AE23A4 /* Data.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D62AFB7425E94E45AA37B55 /* Pods_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C4D3464114F36F13F9014F /* Pods_Data.framework */; };
 		58B831ECD52BFD6716626B2C /* MoviesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B8302E05B1DDE61778CE96 /* MoviesRequest.swift */; };
+		58B8329CC2FBF616AAD3F3B2 /* PagingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B837553074ECF48120A0D7 /* PagingInfo.swift */; };
 		58B83987EB406AC00B0765DD /* Moya+Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83C709A8E0610E3991034 /* Moya+Provider.swift */; };
 		58B83BC189CE94520B1A84E1 /* Single+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B836A82C25DB3AF6B3B3FD /* Single+Request.swift */; };
 		58B83E1E834BAE6E20FAA3C5 /* MoviesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83F49A6E12D461ABFB292 /* MoviesResponse.swift */; };
@@ -78,6 +79,7 @@
 		533B7764FCAB9D707BAE4FC1 /* Pods-Data.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Data.debug.xcconfig"; path = "Target Support Files/Pods-Data/Pods-Data.debug.xcconfig"; sourceTree = "<group>"; };
 		58B8302E05B1DDE61778CE96 /* MoviesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesRequest.swift; sourceTree = "<group>"; };
 		58B836A82C25DB3AF6B3B3FD /* Single+Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Single+Request.swift"; sourceTree = "<group>"; };
+		58B837553074ECF48120A0D7 /* PagingInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingInfo.swift; sourceTree = "<group>"; };
 		58B83C709A8E0610E3991034 /* Moya+Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Moya+Provider.swift"; sourceTree = "<group>"; };
 		58B83F49A6E12D461ABFB292 /* MoviesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesResponse.swift; sourceTree = "<group>"; };
 		5A71A4DDAFBF96B6C317BDF0 /* Pods-Data.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Data.release.xcconfig"; path = "Target Support Files/Pods-Data/Pods-Data.release.xcconfig"; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			children = (
 				6D6C78DDBDFFD4998BD29EEB /* Request */,
 				6D6C73729945274E4F06A075 /* Response */,
+				58B837553074ECF48120A0D7 /* PagingInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				58B83E1E834BAE6E20FAA3C5 /* MoviesResponse.swift in Sources */,
 				58B83BC189CE94520B1A84E1 /* Single+Request.swift in Sources */,
 				58B83987EB406AC00B0765DD /* Moya+Provider.swift in Sources */,
+				58B8329CC2FBF616AAD3F3B2 /* PagingInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

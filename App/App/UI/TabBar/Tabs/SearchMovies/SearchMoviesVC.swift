@@ -16,35 +16,47 @@ final class SearchMoviesVC: UIViewController, ViewControllerProtocol {
     var vm: SearchMoviesVM!
     private var movies: [Movie] = []
     private let disposeBag = DisposeBag()
-
     @IBOutlet weak var searchBar: UISearchBar! {
         didSet {
             searchBar.set(textColor: .black)
         }
     }
-    @IBOutlet weak var tableView: UITableView! {
+    @IBOutlet weak var tableView: PagedTableView! {
         didSet {
-            tableView.setup(source: self, cellIdentifier: .movieCell)
-            tableView.delegate = self
+            tableView.setup(cellIdentifier: .movieCell)
+            tableView.pagedDataSource = self
+            tableView.pager = pager
         }
     }
+    private lazy var pager: Pager = {
+        Pager.Builder()
+                .loadMore { [weak self] next in
+                    guard let self = self else {
+                        return
+                    }
+                    self.searchMovies(page: next)
+                }
+                .build()
+    }()
 
     @IBAction func search(_ sender: UIButton) {
-        searchMovies()
+        movies.removeAll()
+        pager.start()
     }
 
-    private func searchMovies() {
+    private func searchMovies(page: Int = 1) {
         searchBar.endEditing(true)
         guard vm.isValidSearch(query: searchBar.text) else {
             return
         }
-        let request = MoviesRequest(search: searchBar.text ?? "", nextPage: 1)
-        vm.searchMovies(request: request).subscribe(onSuccess: { [weak self] response in
+        let request = MoviesRequest(search: searchBar.text ?? "", nextPage: page)
+        vm.searchMovies(request: request, showLoading: page == 1)
+                .subscribe(onSuccess: { [weak self] response in
                     guard let self = self else {
                         return
                     }
-                    self.movies = response.results
-                    self.tableView.reloadData()
+                    self.movies += response.results
+                    self.pager.notifyItemsLoaded(count: response.results.count)
                 })
                 .disposed(by: disposeBag)
     }
@@ -66,6 +78,7 @@ extension SearchMoviesVC: UITableViewDataSource, UITableViewDelegate {
 //MARK: SearchBar Delegate
 extension SearchMoviesVC: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchMovies()
+        movies.removeAll()
+        pager.start()
     }
 }

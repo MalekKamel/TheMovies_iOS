@@ -8,20 +8,21 @@ import UIKit
 public extension UITableView {
 
     func setup(
-            source: UITableViewDataSource?,
+            source: UITableViewDataSource? = nil,
             bundle: Bundle = Bundle.main,
             cellIdentifier: Identifier...
     ) {
         rowHeight = UITableView.automaticDimension
         estimatedRowHeight = 600
-        dataSource = source
+        if let source = source {
+            dataSource = source
+        }
         cellIdentifier.forEach{ register($0, bundle: bundle) }
 
         separatorColor = UIColor.clear
         allowsSelection = false
         tableFooterView = UIView()
         tableHeaderView = nil
-
     }
 
     func setupProtoType(

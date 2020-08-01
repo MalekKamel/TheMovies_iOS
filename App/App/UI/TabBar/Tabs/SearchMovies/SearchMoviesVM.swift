@@ -21,8 +21,11 @@ class SearchMoviesVM: ViewModelProtocol {
         query?.isEmpty != true
     }
 
-    func searchMovies(request: MoviesRequest) -> Single<MoviesResponse> {
-        requester.request(singleRequest: {
+    func searchMovies(request: MoviesRequest, showLoading: Bool = true) -> Single<MoviesResponse> {
+        let options = RequestOptions.Builder()
+                .showLoading(showLoading)
+                .build()
+        return requester.request(options: options, singleRequest: {
             self.dm.moviesRepo.searchMovies(request: request)
         })
     }

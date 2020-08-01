@@ -89,11 +89,12 @@
 		1A54F8C998E3AD99E1807FC0 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FEC5AE123D1B56C3D53C /* ViewModelProtocol.swift */; };
 		1A54FA00877599F8AABD4D7C /* AppPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F94317057993049B168A /* AppPageViewController.swift */; };
 		1A54FB7E75B92C308C8D2466 /* AppearanceApplyingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FA98D59A0855F947DA36 /* AppearanceApplyingStrategy.swift */; };
-		1A54FC73F803B7B6D9A9225F /* PagedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F3327BF30634EDCC40D9 /* PagedTableView.swift */; };
 		1A54FCDF69E7E4E6CBB2D7DC /* RootVm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F0163D7B571FCBF7DC67 /* RootVm.swift */; };
 		1A54FD9F8D3363AD9A84E15F /* RootViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F1AE10F4E647FF606B00 /* RootViewController+Navigation.swift */; };
 		1A54FE21F971F01A8C045007 /* NavControllerContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F3416AEC25EB16CF6900 /* NavControllerContext.swift */; };
 		1A54FE8E9683778B42648B6B /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F38740839CC403B311A6 /* GradientView.swift */; };
+		58B830179A20B4F9A65844BE /* Pager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83E0EF6FE2118E6DD7A77 /* Pager.swift */; };
+		58B8351E74A11850D451E91B /* PagedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B836BF800D932837B6945C /* PagedTableView.swift */; };
 		6D6C703EC7C8E2824C84B15B /* DPConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6C72C0BF5E323075746678 /* DPConfiguration.swift */; };
 		6D6C71496A3ACD26D2251E3D /* UIView+Flip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6C7C1CF4D9279F6D95DB9C /* UIView+Flip.swift */; };
 		6D6C71DA872421F13EDD0FE9 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6C7722DF0A35FF03A613E8 /* RoundedTextField.swift */; };
@@ -259,7 +260,6 @@
 		1A54F2DF2366108AD6A07E39 /* Pods_Presentation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Presentation.framework; path = "../../../../../Library/Caches/AppCode2019.2/DerivedData/Posts-dfjpotjzsmvtdbchesakwwhuzscj/Build/Products/Debug-iphonesimulator/Pods_Presentation.framework"; sourceTree = "<group>"; };
 		1A54F318F356E4B05BCC80A7 /* RootViewController+UINavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RootViewController+UINavigationControllerDelegate.swift"; sourceTree = "<group>"; };
 		1A54F31E5F309E7F7EB1FFD3 /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocol.swift; sourceTree = "<group>"; };
-		1A54F3327BF30634EDCC40D9 /* PagedTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagedTableView.swift; sourceTree = "<group>"; };
 		1A54F3416AEC25EB16CF6900 /* NavControllerContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavControllerContext.swift; sourceTree = "<group>"; };
 		1A54F38740839CC403B311A6 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		1A54F3DD4CD0644BB704D084 /* RootViewController+Presenters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RootViewController+Presenters.swift"; sourceTree = "<group>"; };
@@ -279,6 +279,8 @@
 		1A54FEC5AE123D1B56C3D53C /* ViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		1A54FF40FFE2F80CF4938F44 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		1A54FFD816812D959661B9AA /* UITableView+Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Cell.swift"; sourceTree = "<group>"; };
+		58B836BF800D932837B6945C /* PagedTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagedTableView.swift; sourceTree = "<group>"; };
+		58B83E0EF6FE2118E6DD7A77 /* Pager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pager.swift; sourceTree = "<group>"; };
 		6042541199222D48DD5862EF /* Pods-Presentation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Presentation.debug.xcconfig"; path = "Target Support Files/Pods-Presentation/Pods-Presentation.debug.xcconfig"; sourceTree = "<group>"; };
 		6D6C70F6FF36F6AA31F31237 /* RoundedCornerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
 		6D6C71DA2271F93A32793AB9 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -590,9 +592,9 @@
 			isa = PBXGroup;
 			children = (
 				1A54F9E54ABAE40517A9CD46 /* ConfigurableCell.swift */,
-				1A54F3327BF30634EDCC40D9 /* PagedTableView.swift */,
 				1A54FD43AC48565A4A63EA88 /* UITableView+Setup.swift */,
 				1A54FFD816812D959661B9AA /* UITableView+Cell.swift */,
+				58B83C9397B4587B2A8FE3F7 /* Paging */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -676,6 +678,15 @@
 				706AE6106A773E1BDF45F6BB /* Pods_Presentation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58B83C9397B4587B2A8FE3F7 /* Paging */ = {
+			isa = PBXGroup;
+			children = (
+				58B836BF800D932837B6945C /* PagedTableView.swift */,
+				58B83E0EF6FE2118E6DD7A77 /* Pager.swift */,
+			);
+			path = Paging;
 			sourceTree = "<group>";
 		};
 		5991556A267B854CC302258F /* Pods */ = {
@@ -1069,7 +1080,6 @@
 				1A54F1998DCED9277BF67C82 /* FloatingLabel.swift in Sources */,
 				1A54F56B26F5C84D065372CD /* ViewControllerProtocol.swift in Sources */,
 				1A54F342DE6E24B17ECFE442 /* ConfigurableCell.swift in Sources */,
-				1A54FC73F803B7B6D9A9225F /* PagedTableView.swift in Sources */,
 				1A54F6C474A0A47244F86933 /* UITableView+Setup.swift in Sources */,
 				1A54F04F59D67D72679F4BDC /* UITableView+Cell.swift in Sources */,
 				1A54FE8E9683778B42648B6B /* GradientView.swift in Sources */,
@@ -1125,6 +1135,8 @@
 				6D6C767BF1721155101039B4 /* ListVCBuilder.swift in Sources */,
 				6D6C767FFE36B3A23F7A2A5A /* ListVC.swift in Sources */,
 				6D6C71496A3ACD26D2251E3D /* UIView+Flip.swift in Sources */,
+				58B8351E74A11850D451E91B /* PagedTableView.swift in Sources */,
+				58B830179A20B4F9A65844BE /* Pager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

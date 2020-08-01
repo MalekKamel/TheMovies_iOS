@@ -17,31 +17,44 @@ final class DiscoverMoviesVC: UIViewController, ViewControllerProtocol {
     private var movies: [Movie] = []
     private let disposeBag = DisposeBag()
 
-    @IBOutlet weak var tableView: UITableView! {
+    @IBOutlet weak var tableView: PagedTableView! {
         didSet {
-            tableView.setup(source: self, cellIdentifier: .movieCell)
-            tableView.delegate = self
+            tableView.setup(cellIdentifier: .movieCell)
+            tableView.pagedDataSource = self
+            tableView.pager = pager
+            pager.start()
         }
     }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        loadMovies()
-    }
-
-    private func loadMovies() {
-        vm.discoverMovies().subscribe(onSuccess: { [weak self] response in
+    private lazy var pager: Pager = {
+        Pager.Builder()
+                .loadMore { [weak self] next in
                     guard let self = self else {
                         return
                     }
-                    self.movies = response.results
-                    self.tableView.reloadData()
+                    self.loadMovies(page: next)
+                }
+                .build()
+    }()
+
+    private func loadMovies(page: Int = 1) {
+        if page == 1 {
+            movies.removeAll()
+            tableView.reloadData()
+        }
+        let request = MoviesRequest(nextPage: page)
+        vm.discoverMovies(request: request, showLoading: page == 1)
+                .subscribe(onSuccess: { [weak self] response in
+                    guard let self = self else {
+                        return
+                    }
+                    self.movies += response.results
+                    self.pager.notifyItemsLoaded(count: response.results.count)
                 })
                 .disposed(by: disposeBag)
     }
 }
 
-extension DiscoverMoviesVC: UITableViewDataSource, UITableViewDelegate {
+extension DiscoverMoviesVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         movies.count
     }

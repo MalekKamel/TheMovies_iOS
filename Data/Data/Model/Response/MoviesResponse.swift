@@ -1,5 +1,5 @@
 //
-// Created by Apple on 29/07/2020.
+// Created by Shaban Kamel on 29/07/2020.
 // Copyright (c) 2020 sha. All rights reserved.
 //
 
@@ -27,7 +27,7 @@ public struct Movie: Codable {
     public let id: Int
     public let title: String
     public let overview: String
-    public let releaseDate: String
+    public let releaseDate: String?
 
     enum CodingKeys: String, CodingKey {
         case popularity = "popularity"

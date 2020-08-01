@@ -17,8 +17,11 @@ class DiscoverMoviesVM: ViewModelProtocol {
         self.dm = dm
     }
 
-    func discoverMovies(request: MoviesRequest = MoviesRequest()) -> Single<MoviesResponse> {
-        requester.request(singleRequest: {
+    func discoverMovies(request: MoviesRequest, showLoading: Bool = true) -> Single<MoviesResponse> {
+        let options = RequestOptions.Builder()
+                .showLoading(showLoading)
+                .build()
+        return requester.request(options: options, singleRequest: {
             self.dm.moviesRepo.discoverMovies(request: request)
         })
     }
