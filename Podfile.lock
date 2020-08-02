@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.2.1)
+  - Alamofire (5.2.2)
   - BartyCrouch (3.13.0)
   - BulletinBoard (4.1.2)
   - CountryPickerSwift (1.8.2)
@@ -18,8 +18,8 @@ PODS:
   - Layout (0.7.0):
     - Layout/Core (= 0.7.0)
   - Layout/Core (0.7.0)
-  - MaterialComponents/Availability (110.3.0)
-  - MaterialComponents/BottomSheet (110.3.0):
+  - MaterialComponents/Availability (111.0.0)
+  - MaterialComponents/BottomSheet (111.0.0):
     - MaterialComponents/Elevation
     - MaterialComponents/private/KeyboardWatcher
     - MaterialComponents/private/Math
@@ -27,23 +27,23 @@ PODS:
     - MaterialComponents/ShadowLayer
     - MaterialComponents/ShapeLibrary
     - MaterialComponents/Shapes
-  - MaterialComponents/Elevation (110.3.0):
+  - MaterialComponents/Elevation (111.0.0):
     - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/private/Application (110.3.0)
-  - MaterialComponents/private/Color (110.3.0):
+  - MaterialComponents/private/Application (111.0.0)
+  - MaterialComponents/private/Color (111.0.0):
     - MaterialComponents/Availability
-  - MaterialComponents/private/KeyboardWatcher (110.3.0):
+  - MaterialComponents/private/KeyboardWatcher (111.0.0):
     - MaterialComponents/private/Application
-  - MaterialComponents/private/Math (110.3.0)
-  - MaterialComponents/ShadowElevations (110.3.0)
-  - MaterialComponents/ShadowLayer (110.3.0):
+  - MaterialComponents/private/Math (111.0.0)
+  - MaterialComponents/ShadowElevations (111.0.0)
+  - MaterialComponents/ShadowLayer (111.0.0):
     - MaterialComponents/ShadowElevations
-  - MaterialComponents/ShapeLibrary (110.3.0):
+  - MaterialComponents/ShapeLibrary (111.0.0):
     - MaterialComponents/private/Math
     - MaterialComponents/Shapes
-  - MaterialComponents/Shapes (110.3.0):
+  - MaterialComponents/Shapes (111.0.0):
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
     - MaterialComponents/ShadowLayer
@@ -53,11 +53,11 @@ PODS:
   - Moya/RxSwift (14.0.0):
     - Moya/Core
     - RxSwift (~> 5.0)
-  - Realm (5.3.2):
-    - Realm/Headers (= 5.3.2)
-  - Realm/Headers (5.3.2)
-  - RealmSwift (5.3.2):
-    - Realm (= 5.3.2)
+  - Realm (5.3.3):
+    - Realm/Headers (= 5.3.3)
+  - Realm/Headers (5.3.3)
+  - RealmSwift (5.3.3):
+    - Realm (= 5.3.3)
   - RxBlocking (5.1.1):
     - RxSwift (~> 5)
   - RxRequester/Core (0.4.0):
@@ -77,7 +77,7 @@ PODS:
   - SwiftMessages (8.0.0):
     - SwiftMessages/App (= 8.0.0)
   - SwiftMessages/App (8.0.0)
-  - WMSegmentControl (0.1.16)
+  - WMSegmentControl (1.0)
 
 DEPENDENCIES:
   - BartyCrouch (= 3.13.0)
@@ -134,7 +134,7 @@ SPEC REPOS:
     - WMSegmentControl
 
 SPEC CHECKSUMS:
-  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   BartyCrouch: 69e5e6ec67e77951dc1c22aa48abbf05d175b81c
   BulletinBoard: 1c0cb191b6c6245d08f51bd2445f1e36414ec0ed
   CountryPickerSwift: b2cd8b391a0222bd9a97d09ea30426303adac810
@@ -145,11 +145,11 @@ SPEC CHECKSUMS:
   GooglePlaces: 1634d019549b969d40fe0ccb0b9513055adebe01
   IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
   Layout: 06efb0889c3065340eefceefb938b0add675a12b
-  MaterialComponents: 424da6db40748236c6f071a9e9fbe00aa62033ff
+  MaterialComponents: 533042da998b97ad13a6f544268f8026e8161cc5
   ModelsMapper: 7c7f748889e5583c9c56002d67abb217e01d08e4
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
-  Realm: c6794276ca8884808ba168a22f9d71362b170b85
-  RealmSwift: 42ec6cec3170aeeda407f797f07268a7d055ebc7
+  Realm: 2d57ea355bf8ca2a0964d6bfb38d28d7ff2addf6
+  RealmSwift: 0a709536ecea30eea1d3c514f6ade2ed078dee3c
   RxBlocking: 5f700a78cad61ce253ebd37c9a39b5ccc76477b4
   RxRequester: fbe7404768d7bb40481ad77b14d04c30961af592
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
@@ -159,8 +159,8 @@ SPEC CHECKSUMS:
   SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
   SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
   SwiftMessages: 29e7975b1173fd4e8357600c6518b5a59bc607d6
-  WMSegmentControl: 828fc1c3cdc9be84d4786aa15e61bd03342294ea
+  WMSegmentControl: 00415dce32ed41ad7623ac6ac076eedbb8140a5e
 
-PODFILE CHECKSUM: a7604e314ea3c48f706c2cf40564a598a4b94f5f
+PODFILE CHECKSUM: 7ab9b37dbed691eb11fa8573a0b52342f9650416
 
 COCOAPODS: 1.9.3

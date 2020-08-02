@@ -21,6 +21,7 @@
 		046B7F9E236F365D00AE23A4 /* AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B7F9D236F365D00AE23A4 /* AppUITests.swift */; };
 		04D207DC23799890004CD6B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D207D723799348004CD6B9 /* Assets.xcassets */; };
 		04D207DD23799890004CD6B9 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D207CE23799341004CD6B9 /* Colors.xcassets */; };
+		1839705324D6C34B0053D8C0 /* DiscoverMoviesVMTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83C69A70B244A09C3A3C3 /* DiscoverMoviesVMTest.swift */; };
 		183C8BBB24D1F0ED0041742F /* SearchMovies.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0071276A23E8C47F00B759D7 /* SearchMovies.storyboard */; };
 		183C8BDE24D1F6760041742F /* DiscoverMovies.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58B839A61B40DAAF6F8BEE20 /* DiscoverMovies.storyboard */; };
 		185533B524D1FDB2009942E7 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6C7ED52627E62C4605F9F8 /* TabBarVC.swift */; };
@@ -29,6 +30,7 @@
 		1A54FF95B6DC924CAE2292AE /* Data.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F3A0CF028F58A272CDBF /* Data.xcdatamodel */; };
 		58B83123343D567E311337B6 /* DiscoverMoviesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83C38D7466336CE84B746 /* DiscoverMoviesVM.swift */; };
 		58B8319EE964288D974EF95D /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58B833BF79FD33BFCF00A252 /* Splash.storyboard */; };
+		58B832038BEE6512C6E3C415 /* DiscoverMoviesVMTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83C69A70B244A09C3A3C3 /* DiscoverMoviesVMTest.swift */; };
 		58B833676C3EAD69C164407A /* DiscoverMoviesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83F39BBAF34A524BF9EF8 /* DiscoverMoviesVC.swift */; };
 		58B836401927C350810DBFE3 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83070958AF3E8A65C2966 /* MovieCell.swift */; };
 		58B83EC1AA31B72DF26F2D01 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58B83EE20529EA2CD491EB88 /* TabBar.storyboard */; };
@@ -174,6 +176,7 @@
 		58B833BF79FD33BFCF00A252 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		58B839A61B40DAAF6F8BEE20 /* DiscoverMovies.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DiscoverMovies.storyboard; sourceTree = "<group>"; };
 		58B83C38D7466336CE84B746 /* DiscoverMoviesVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverMoviesVM.swift; sourceTree = "<group>"; };
+		58B83C69A70B244A09C3A3C3 /* DiscoverMoviesVMTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverMoviesVMTest.swift; sourceTree = "<group>"; };
 		58B83EE20529EA2CD491EB88 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		58B83F39BBAF34A524BF9EF8 /* DiscoverMoviesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverMoviesVC.swift; sourceTree = "<group>"; };
 		58B83F8A240C86DD70EB2F32 /* DiscoverMoviesVCBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverMoviesVCBuilder.swift; sourceTree = "<group>"; };
@@ -275,6 +278,7 @@
 			children = (
 				046B7F92236F365D00AE23A4 /* AppTests.swift */,
 				046B7F94236F365D00AE23A4 /* Info.plist */,
+				58B83C69A70B244A09C3A3C3 /* DiscoverMoviesVMTest.swift */,
 			);
 			path = AppTests;
 			sourceTree = "<group>";
@@ -746,6 +750,7 @@
 				58B83F8422A2ECCF59AA3FBA /* DiscoverMoviesVCBuilder.swift in Sources */,
 				185533B524D1FDB2009942E7 /* TabBarVC.swift in Sources */,
 				58B836401927C350810DBFE3 /* MovieCell.swift in Sources */,
+				58B832038BEE6512C6E3C415 /* DiscoverMoviesVMTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,6 +758,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1839705324D6C34B0053D8C0 /* DiscoverMoviesVMTest.swift in Sources */,
 				046B7F93236F365D00AE23A4 /* AppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
