@@ -54,7 +54,6 @@
 		185FB80424D6F770000198C6 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		185FB80624D6F770000198C6 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		185FB80824D6F770000198C6 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		185FB81224D6FB95000198C6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1A54F3A0CF028F58A272CDBF /* Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Data.xcdatamodel; sourceTree = "<group>"; };
 		1A54F755634CC4F7A914F9D4 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		2AD0B20A3513AA8144CBE2EE /* Pods_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,7 +226,6 @@
 		932A5EBA07BCEF90841837E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				185FB81224D6FB95000198C6 /* XCTest.framework */,
 				185FB80424D6F770000198C6 /* Core.framework */,
 				185FB80624D6F770000198C6 /* Data.framework */,
 				185FB80824D6F770000198C6 /* Presentation.framework */,
