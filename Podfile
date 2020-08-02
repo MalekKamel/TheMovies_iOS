@@ -70,7 +70,6 @@ target 'App' do
     project 'App/App.project'
     app_pods
     presentation_pods
-    test_pods
 end
 
 post_install do |installer|

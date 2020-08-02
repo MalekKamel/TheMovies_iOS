@@ -58,16 +58,12 @@ PODS:
   - Realm/Headers (5.3.3)
   - RealmSwift (5.3.3):
     - Realm (= 5.3.3)
-  - RxBlocking (5.1.1):
-    - RxSwift (~> 5)
   - RxRequester/Core (0.4.0):
     - RxSwift (~> 5.0)
   - RxRequester/Moya (0.4.0):
     - Moya/RxSwift (~> 14.0.0-beta.5)
     - RxRequester/Core
   - RxSwift (5.1.1)
-  - RxTest (5.1.1):
-    - RxSwift (~> 5)
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
@@ -93,10 +89,8 @@ DEPENDENCIES:
   - ModelsMapper
   - Moya/RxSwift (~> 14.0.0)
   - RealmSwift
-  - RxBlocking
   - RxRequester/Moya (~> 0.4.0)
   - RxSwift (~> 5.0)
-  - RxTest
   - SDWebImage (= 4.4.2)
   - SnapKit (~> 4.0)
   - SwiftGen (= 6.1.0)
@@ -122,10 +116,8 @@ SPEC REPOS:
     - Moya
     - Realm
     - RealmSwift
-    - RxBlocking
     - RxRequester
     - RxSwift
-    - RxTest
     - SDWebImage
     - SnapKit
     - SwiftGen
@@ -150,10 +142,8 @@ SPEC CHECKSUMS:
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   Realm: 2d57ea355bf8ca2a0964d6bfb38d28d7ff2addf6
   RealmSwift: 0a709536ecea30eea1d3c514f6ade2ed078dee3c
-  RxBlocking: 5f700a78cad61ce253ebd37c9a39b5ccc76477b4
   RxRequester: fbe7404768d7bb40481ad77b14d04c30961af592
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
-  RxTest: 711632d5644dffbeb62c936a521b5b008a1e1faa
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
@@ -161,6 +151,6 @@ SPEC CHECKSUMS:
   SwiftMessages: 29e7975b1173fd4e8357600c6518b5a59bc607d6
   WMSegmentControl: 00415dce32ed41ad7623ac6ac076eedbb8140a5e
 
-PODFILE CHECKSUM: 7ab9b37dbed691eb11fa8573a0b52342f9650416
+PODFILE CHECKSUM: 14e164cf3814726dae4647c84424c41432b4f73c
 
 COCOAPODS: 1.9.3

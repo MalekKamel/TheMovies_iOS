@@ -41,19 +41,6 @@
 		EBF4344243F3AA4DFBD433AB /* Pods_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD0B20A3513AA8144CBE2EE /* Pods_App.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		042077E7236F55F50007CFDE /* Copy Framworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Copy Framworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		0071276A23E8C47F00B759D7 /* SearchMovies.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchMovies.storyboard; sourceTree = "<group>"; };
 		042078D0236F8A7A0007CFDE /* AppStoryboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoryboards.swift; sourceTree = "<group>"; };
@@ -67,6 +54,7 @@
 		185FB80424D6F770000198C6 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		185FB80624D6F770000198C6 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		185FB80824D6F770000198C6 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		185FB81224D6FB95000198C6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1A54F3A0CF028F58A272CDBF /* Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Data.xcdatamodel; sourceTree = "<group>"; };
 		1A54F755634CC4F7A914F9D4 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		2AD0B20A3513AA8144CBE2EE /* Pods_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -239,6 +227,7 @@
 		932A5EBA07BCEF90841837E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				185FB81224D6FB95000198C6 /* XCTest.framework */,
 				185FB80424D6F770000198C6 /* Core.framework */,
 				185FB80624D6F770000198C6 /* Data.framework */,
 				185FB80824D6F770000198C6 /* Presentation.framework */,
@@ -259,7 +248,6 @@
 				046B7F71236F365B00AE23A4 /* Sources */,
 				046B7F72236F365B00AE23A4 /* Frameworks */,
 				046B7F73236F365B00AE23A4 /* Resources */,
-				042077E7236F55F50007CFDE /* Copy Framworks */,
 				5A3A10BC3DB8254002D9A437 /* [CP] Embed Pods Frameworks */,
 				A7AF26A9CCC660512820EB93 /* [CP] Copy Pods Resources */,
 			);
