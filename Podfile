@@ -4,10 +4,6 @@ use_frameworks!
 
 workspace 'Posts'
 
-def modelMapper
-  pod 'ModelsMapper'
-end
-
 #core module
 def core_pods
   pod 'BulletinBoard'
@@ -55,7 +51,7 @@ end
 target 'Data' do
     project 'Data/Data.project'
     data_pods
-    modelMapper
+    pod 'ModelsMapper'
 end
 
 #app module
@@ -65,10 +61,16 @@ def app_pods
     pod 'GooglePlaces'
 end
 
+def test_pods
+  pod 'RxTest'
+  pod 'RxBlocking'
+end
+
 target 'App' do
     project 'App/App.project'
     app_pods
     presentation_pods
+    test_pods
 end
 
 post_install do |installer|
