@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1130"
+   LastUpgradeVersion = "1160"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -31,7 +31,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "046B7F74236F365B00AE23A4"
-            BuildableName = "App"
+            BuildableName = "The Movies.app"
             BlueprintName = "App"
             ReferencedContainer = "container:../App/App.xcodeproj">
          </BuildableReference>

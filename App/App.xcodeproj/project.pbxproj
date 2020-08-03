@@ -64,6 +64,7 @@
 		046B7F89236F365D00AE23A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04D207CE23799341004CD6B9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		04D207D723799348004CD6B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1823884624D8AAAD009301B1 /* The Movies.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = "The Movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		185533C524D21607009942E7 /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
 		185FB80424D6F770000198C6 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		185FB80624D6F770000198C6 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				185FB81E24D70537000198C6 /* AppTests.xctest */,
+				1823884624D8AAAD009301B1 /* The Movies.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -303,6 +305,7 @@
 			);
 			name = App;
 			productName = App;
+			productReference = 1823884624D8AAAD009301B1 /* The Movies.app */;
 			productType = "com.apple.product-type.application";
 		};
 		185FB81D24D70537000198C6 /* AppTests */ = {
@@ -341,6 +344,7 @@
 					};
 					185FB81D24D70537000198C6 = {
 						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 046B7F74236F365B00AE23A4;
 					};
 				};
 			};
@@ -748,6 +752,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A8440D49F8682B1C5A70A910 /* Pods-App-AppTests.debug.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
@@ -760,6 +765,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Movies.app/The Movies";
 			};
 			name = Debug;
 		};
@@ -767,6 +773,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8FD51EAC8302E4782243C1A6 /* Pods-App-AppTests.release.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
@@ -779,6 +786,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Movies.app/The Movies";
 			};
 			name = Release;
 		};
@@ -786,6 +794,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 45EDB993FD0D1A684776A50F /* Pods-App-AppTests.dev.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
@@ -798,6 +807,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Movies.app/The Movies";
 			};
 			name = Dev;
 		};
